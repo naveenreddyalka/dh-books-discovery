@@ -77,5 +77,19 @@ DailyHunt Books' plugin module for 360fy's humane-discovery.
 - publisherAutocomplete
 - bookAutocomplete
 
+CHAT:
+
+you can put the configurations in some folder
+and define production.yml for production env.
+staging.yml for staging
+default.yml for dev
+for env. you need to export NODE_ENV=production, for example.
+you can see defined properties in source code I sent you for dh-books
+they are under envConfig folder
+production properties are defined as per your prod env. but commented
+I picked those values from earlier shared code
+default it picks from that location as you mentioned
+but way to override is put in some outside folder and use it with -c or --config argument
+point to folder, not property file.
 
 
